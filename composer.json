@@ -1,0 +1,29 @@
+{
+  "name": "ai-da-yu/v3sdk",
+  "description": "lian lian pay sdk",
+  "type": "library",
+  "keywords": [
+    "lianlianpay"
+  ],
+  "homepage": "https://www.lianlianpay.com",
+  "readme": "https://doc.lianlianpay.com/download/api3sdk/phpsdk",
+  "authors": [
+    {
+      "name": "Alex Luo",
+      "email": "alexlzy8@gmail.com",
+      "homepage": "https://www.lzyenjoy.cn",
+      "role": "developer"
+    }
+  ],
+  "license": ["Apache-2.0"],
+  "require": {
+    "php": "7.*"
+  },
+  "minimum-stability": "stable",
+  "prefer-stable": true,
+  "autoload": {
+    "psr-4": {
+      "lianlianpay\\v3sdk\\": "src"
+    }
+  }
+}
