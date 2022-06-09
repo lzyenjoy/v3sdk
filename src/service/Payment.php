@@ -42,12 +42,6 @@ class Payment
 
         $result = $this->http_client->post($pay_url, $header, $arr);
 
-        //响应结果
-        $writer = new \Zend_Log_Writer_Stream(BP . '/var/log/ll_pay_origin_response.log');
-        $logger = new \Zend_Log();
-        $logger->addWriter($writer);
-        $logger->info('支付响应的信息：' . json_encode($result, JSON_UNESCAPED_UNICODE));
-
         if (empty($result['body'])) {
             return null;
         }
